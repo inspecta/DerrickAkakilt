@@ -1,82 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Fork Me! FCC: Test Suite Template</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
-
-<body>
-  <div class="container">
-    <p>Hello World, we are software developers!</p>
-
-    <h1 id="title">Survey Website</h1>
-    <p id="description">Survey website is looking data for research in COVID 19</p>
-    <form id="survey-form">
-      <label id="name-label">Name: </label>
-      <input type="text" id="name" placeholder="Enter your name" required="true" class="form-control">
-      <label id="email-label">Email: </label>
-      <input type="email" id="email" placeholder="Enter your email" required="true" class="form-control">
-      <label id="number-label">Number:</label>
-      <input type="number" id="number" min="18" max="120" placeholder="Enter number" required="true"
-        class="form-control">
-      <br>
-      <p>Country</p>
-      <select id="dropdown" class="form-control">
-        <option value="Ethiopia" class="dropdown-item">Ethiopia</option>
-        <option value="Uganda" class="dropdown-item">Uganda</option>
-      </select>
-      <br>
-      <p>Sex</p>
-      <fieldset id="sex">
+  <body class="body">
+    <div class="container">
+      <h1 id="title" class="mb-3">SURVEY WEBSITE</h1>
+      <p id="description">
+        Survey website is looking data for research in COVID 19
+      </p>
+      <form id="survey-form">
+        <label id="name-label">Name: </label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required="true"
+          class="form-control"
+        />
+        <label id="email-label">Email: </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required="true"
+          class="form-control"
+        />
+        <label id="number-label">Number:</label>
+        <input
+          type="number"
+          id="number"
+          min="18"
+          max="120"
+          placeholder="Enter number"
+          required="true"
+          class="form-control"
+        />
+        <br />
+        <p>Country</p>
+        <select id="dropdown" class="form-control">
+          <option value="Ethiopia" class="dropdown-item">Ethiopia</option>
+          <option value="Uganda" class="dropdown-item">Uganda</option>
+        </select>
+        <br />
+        <p>Sex</p>
+        <fieldset id="sex">
+          <div class="form-check">
+            <input type="radio" name="radio" value="Male" />
+            <label class="form-check-label"> Male </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="radio" value="Female" />
+            <label class="form-check-label"> Female </label>
+          </div>
+        </fieldset>
+        <br />
+        <p>List of Hobbies</p>
         <div class="form-check">
-          <input type="radio" name="radio" value="Male">
-          <label class="form-check-label">
-            Male
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox"
+            value="Football"
+            class="form-check-input"
+          />
+          <label class="form-check-label"> Football </label>
         </div>
         <div class="form-check">
-          <input type="radio" name="radio" value="Female">
-          <label class="form-check-label">
-            Female
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox"
+            value="Books"
+            class="form-check-input"
+          />
+          <label class="form-check-label"> Books </label>
         </div>
-      </fieldset>
-      <br>
-      <p>List of Hobbies</p>
-      <div class="form-check">
-        <input type="checkbox" id="checkbox" value="Football" class="form-check-input">
-        <label class="form-check-label">
-          Football
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" id="checkbox" value="Books" class="form-check-input">
-        <label class="form-check-label">
-          Books
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" id="checkbox" value="Swimming" class="form-check-input">
-        <label class="form-check-label">
-          Swimming
-        </label>
-      </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            id="checkbox"
+            value="Swimming"
+            class="form-check-input"
+          />
+          <label class="form-check-label"> Swimming </label>
+        </div>
 
-      <br>
-      <p>Comments</p>
-      <textarea name="comments" id="comments" cols="30" rows="10" class="form-control"></textarea>
-      <br>
-      <input type="submit" id="submit" value="Submit" class="btn btn-success">
-
-    </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="js/index.js"></script>
-  </div>
-</body>
-
+        <br />
+        <p>Comments</p>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          class="form-control"
+        ></textarea>
+        <br />
+        <input
+          type="submit"
+          id="submit"
+          value="Submit"
+          class="btn btn-success"
+        />
+      </form>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script src="js/index.js"></script>
+    </div>
+  </body>
 </html>

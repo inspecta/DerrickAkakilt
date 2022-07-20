@@ -1,0 +1,18 @@
+.body {
+  background-color: rgb(161, 159, 159);
+}
+
+#survey-form {
+  align-content: center;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  .body {
+    background-color: aqua;
+  }
+}
