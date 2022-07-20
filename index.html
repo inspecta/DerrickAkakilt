@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <body>
-    <div class="container">
+</head>
+
+<body>
+  <div class="container">
     <p>Hello World, we are software developers!</p>
 
     <h1 id="title">Survey Website</h1>
@@ -19,33 +21,62 @@
       <input type="text" id="name" placeholder="Enter your name" required="true" class="form-control">
       <label id="email-label">Email: </label>
       <input type="email" id="email" placeholder="Enter your email" required="true" class="form-control">
-      <label id="number-label">Number: </label>: </label>
-      <input type="number" id="number" min="18" max="120" placeholder="Enter number" required="true" class="form-control">
-    
-      <p>Dropdown</p>
-      <select id="dropdown" class="dropdown-menu">
-        <option value="value1" class="dropdown-item">Value 1</option>
-        <option value="value2" class="dropdown-item">Value 2</option>
+      <label id="number-label">Number:</label>
+      <input type="number" id="number" min="18" max="120" placeholder="Enter number" required="true"
+        class="form-control">
+      <br>
+      <p>Country</p>
+      <select id="dropdown" class="form-control">
+        <option value="Ethiopia" class="dropdown-item">Ethiopia</option>
+        <option value="Uganda" class="dropdown-item">Uganda</option>
       </select>
+      <br>
+      <p>Sex</p>
+      <fieldset id="sex">
+        <div class="form-check">
+          <input type="radio" name="radio" value="Male">
+          <label class="form-check-label">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="radio" value="Female">
+          <label class="form-check-label">
+            Female
+          </label>
+        </div>
+      </fieldset>
+      <br>
+      <p>List of Hobbies</p>
+      <div class="form-check">
+        <input type="checkbox" id="checkbox" value="Football" class="form-check-input">
+        <label class="form-check-label">
+          Football
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="checkbox" value="Books" class="form-check-input">
+        <label class="form-check-label">
+          Books
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="checkbox" value="Swimming" class="form-check-input">
+        <label class="form-check-label">
+          Swimming
+        </label>
+      </div>
 
-      <p>Radio Buttons</p>
-      <input type="radio" name="radio" value="1">Radio 1
-      <input type="radio" name="radio" value="2">Radio 2
-
-      <p>Checkboxes</p>
-      <input type="checkbox" id="checkbox" value="checkbox1">
-      <input type="checkbox" id="checkbox" value="checkbox2">
-      <input type="checkbox" id="checkbox" value="checkbox3">
-      <input type="checkbox" id="checkbox" value="checkbox4">
-
+      <br>
       <p>Comments</p>
-      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-    
+      <textarea name="comments" id="comments" cols="30" rows="10" class="form-control"></textarea>
+      <br>
       <input type="submit" id="submit" value="Submit" class="btn btn-success">
 
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
   </div>
-  </body>
+</body>
+
 </html>
